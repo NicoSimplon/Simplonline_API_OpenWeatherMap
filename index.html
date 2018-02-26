@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OpenWeatherMap</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="row slide">
+		<div class="col m12 show-on-medium-and-up hide-on-small-only" id="ville_et_date">
+			<form method="post">
+				<input id="ville" type="text" name="ville" maxlength="20">
+				<a class="waves-effect waves-dark btn" id="bouton">valider</a>
+			</form>
+			<br/>
+			<div id="date">
+				
+			</div>
+			<br/>
+		</div>
+		
+		<div class="col s12 show-on-small hide-on-med-and-up" id="ville_et_dateS">
+			<form method="post">
+				<input id="villeS" type="text" name="ville" maxlength="20">
+				<a class="waves-effect waves-dark btn" id="bouton">valider</a>
+			</form>
+			<br/>
+			<div id="dateS">
+				
+			</div>
+			<br/>
+		</div>
+
+		<div id="meteo">
+			<div class="col m6 show-on-medium-and-up hide-on-small-only" id="temperature">
+				<p class="tailleTemp">7°</p>
+			</div>
+
+			<div class="col s12 show-on-small hide-on-med-and-up" id="temperatureS">
+				<p class="tailleTemp">7°</p>
+			</div>
+
+			<div class="col m6 show-on-medium-and-up hide-on-small-only" id="autres_donnees">
+				<br/>
+				<br/>
+				<p>Temp. max: <span id="tempMax"></span>°</p>
+				<p>Temp. min: <span id="tempMin"></span>°</p>				
+				<p>Pres. atmosphérique: <span id="presAthmos"></span></p>
+				<p>Vitesse du vent: <span id="vitessVent"></span>km/h</p>
+				<p>Humidité: <span id="humidite"></span>%</p>
+			</div>
+
+			<div class="col s12 show-on-small hide-on-med-and-up" id="autres_donneesS">
+				<p>Temp. max: <span id="tempMax"></span>°</p>
+				<p>Temp. min: <span id="tempMin"></span>°</p>				
+				<p>Pres. atmosphérique: <span id="presAthmos"></span></p>
+				<p>Vitesse du vent: <span id="vitessVent"></span>km/h</p>
+				<p>Humidité: <span id="humidite"></span>%</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="slide">
+		
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.extensions.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
