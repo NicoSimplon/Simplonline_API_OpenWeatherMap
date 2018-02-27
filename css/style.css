@@ -83,3 +83,10 @@ body {
 		text-align: center;
 	}
 }
+
+/* afficher les coordonnées GPS et la carte */
+#coordonnees {
+	font-size: 15pt;
+	margin-left: 100px;
+}
+
