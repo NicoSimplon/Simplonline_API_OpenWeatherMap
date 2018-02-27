@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="row slide">
-		<div class="col m12 show-on-medium-and-up hide-on-small-only" id="ville_et_date">
+		<div class="col s12" id="ville_et_date">
 			<form method="post">
 				<input id="ville" type="text" name="ville" maxlength="20">
 				<a class="waves-effect waves-dark btn" id="bouton">valider</a>
@@ -21,39 +21,15 @@
 			</div>
 			<br/>
 		</div>
-		
-		<div class="col s12 show-on-small hide-on-med-and-up" id="ville_et_dateS">
-			<form method="post">
-				<input id="villeS" type="text" name="ville" maxlength="20">
-				<a class="waves-effect waves-dark btn" id="bouton">valider</a>
-			</form>
-			<br/>
-			<div id="dateS">
-				
-			</div>
-			<br/>
-		</div>
 
 		<div id="meteo">
-			<div class="col m6 show-on-medium-and-up hide-on-small-only" id="temperature">
+			<div class="col s12 m6" id="temperature">
 				<p class="tailleTemp">7°</p>
 			</div>
 
-			<div class="col s12 show-on-small hide-on-med-and-up" id="temperatureS">
-				<p class="tailleTemp">7°</p>
-			</div>
-
-			<div class="col m6 show-on-medium-and-up hide-on-small-only" id="autres_donnees">
-				<br/>
-				<br/>
-				<p>Temp. max: <span id="tempMax"></span>°</p>
-				<p>Temp. min: <span id="tempMin"></span>°</p>				
-				<p>Pres. atmosphérique: <span id="presAthmos"></span></p>
-				<p>Vitesse du vent: <span id="vitessVent"></span>km/h</p>
-				<p>Humidité: <span id="humidite"></span>%</p>
-			</div>
-
-			<div class="col s12 show-on-small hide-on-med-and-up" id="autres_donneesS">
+			<div class="col s12 m6" id="autres_donnees">
+				<div class="hide-on-small-only"><br/></div>
+				<div class="hide-on-small-only"><br/></div>
 				<p>Temp. max: <span id="tempMax"></span>°</p>
 				<p>Temp. min: <span id="tempMin"></span>°</p>				
 				<p>Pres. atmosphérique: <span id="presAthmos"></span></p>
