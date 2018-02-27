@@ -8,7 +8,7 @@ body {
 }
 
 /* rentrer le nom de la ville */
-#ville {
+#address {
 	width: 40%;
 	margin-top: 5%;
 	margin-right: 30%;
@@ -17,7 +17,7 @@ body {
 }
 
 @media(max-width: 600px) {
-	#ville {
+	#address {
 	width: 40%;
 	margin-top: 5%;
 	margin-right: 30%;
@@ -26,7 +26,7 @@ body {
 	}
 }
 
-#bouton {
+#submit {
 	background-color: white;
 	color: #00796B;
 	border-radius: 20px;
@@ -87,6 +87,12 @@ body {
 /* afficher les coordonnées GPS et la carte */
 #coordonnees {
 	font-size: 15pt;
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
+#map {
+	height: 600px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
