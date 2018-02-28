@@ -5,26 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>OpenWeatherMap</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="row">
 		<div class="col s12" id="ville_et_date">
-			<form method="post" action="#">
+			<form method="post">
 				<input id="address" type="text" name="ville" value="Pamiers" maxlength="20">
 				<a class="waves-effect waves-dark btn" id="submit">valider</a>
 			</form>
-			<br/>
-			<div id="date">
-				
-			</div>
-			<br/>
+			<div class="hide-on-small-only"><br/></div>
+			<div id="date"></div>
 		</div>
 
 		<div id="meteo">
 			<div class="col s12 m6" id="temperature">
-				<p class="tailleTemp" id="temp"></p>
+				<p id="temp"></p>
 			</div>
 
 			<div class="col s12 m6" id="autres_donnees">
@@ -39,16 +35,13 @@
 		</div>
 	</div>
 
-	<div class="col m12 hide-on-small-only">
+	<div>
 		<p id="coordonnees">Longitude: <span id="longitude"></span> &nbsp; &nbsp; &nbsp; &nbsp; Latitude: <span id="latitude"></span></p>
-		<div id="map">
-	
-		</div>
+		<div id="map"></div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.extensions.min.js"></script>
 	<script src="js/moment.js"></script>
 	<script src="js/app.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMtdsVDGb8x9NJku3jdI3eFfAL9tu22ao&callback=initMap"></script>

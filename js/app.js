@@ -76,7 +76,7 @@ $("#submit").click(function(){
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
+        zoom: 12,
         center: {lat: 43.11, lng: 1.61}
     });
     var geocoder = new google.maps.Geocoder();
@@ -91,6 +91,10 @@ function geocodeAddress(geocoder, resultsMap) {
     geocoder.geocode({'address': address}, function(results, status) {
         if (status === 'OK') {
             resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+            	map: resultsMap,
+            	position: results[0].geometry.location
+            });
         } 
         else {
             alert('Geocode was not successful for the following reason: ' + status);
