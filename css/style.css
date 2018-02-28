@@ -23,6 +23,7 @@ body {
 		margin-right: 30%;
 		margin-left: 30%;
 		font-size: 20pt;
+		text-align: center;
 	}
 }
 
@@ -32,6 +33,12 @@ body {
 	border-radius: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+#bouton:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid white;
+	color:  white;
 }
 
 @media(max-width: 600px){
