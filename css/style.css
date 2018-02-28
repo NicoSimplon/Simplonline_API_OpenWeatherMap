@@ -8,7 +8,7 @@ body {
 }
 
 /* rentrer le nom de la ville */
-#address {
+#ville {
 	width: 40%;
 	margin-top: 2%;
 	margin-right: 30%;
@@ -17,16 +17,16 @@ body {
 }
 
 @media(max-width: 600px) {
-	#address {
-	width: 40%;
-	margin-top: 2%;
-	margin-right: 30%;
-	margin-left: 30%;
-	font-size: 20pt;
+	#ville {
+		width: 40%;
+		margin-top: 2%;
+		margin-right: 30%;
+		margin-left: 30%;
+		font-size: 20pt;
 	}
 }
 
-#submit {
+#bouton {
 	background-color: white;
 	color: #00796B;
 	border-radius: 20px;
@@ -35,7 +35,7 @@ body {
 }
 
 @media(max-width: 600px){
-	#submit {
+	#bouton {
 	background-color: white;
 	color: #00796B;
 	border-radius: 20px;
@@ -107,7 +107,7 @@ body {
 	}
 }
 
-#map {
+#carte {
 	height: 600px;
 	margin-left: 50px;
 	margin-right: 50px;
@@ -115,7 +115,7 @@ body {
 }
 
 @media(max-width: 600px){
-	#map {
+	#carte {
 		height: 400px;
 		margin-left: 10px;
 		margin-right: 10px;
