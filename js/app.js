@@ -27,12 +27,12 @@ function meteo(ville){
 $(document).ready(function(){
 	//Je charge les données de Pamiers (grâce à la value de l'input) lors du chargement de la page
 	meteo(ville);
-	//Je valide l'envoie du formlaire en appuyant sur le bouton valider
+	//Je conditione ma fonction à l'appui sur le bouton valider
 	$("#bouton").click(function(){
 		ville = $("#ville").val();
 		meteo(ville);
 	})
-	//Je valide l'envoie du formulaire grâce à la pression de la touche entrée
+	//Je conditionne ma fonction à la pression de la touche entrée
 	$("#ville").keypress(function(e){
 	  	if ( e.keyCode == 13 ) {
 			ville = $("#ville").val();
