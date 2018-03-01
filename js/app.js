@@ -8,7 +8,7 @@ var ville = $("#ville").val();
 function meteo(ville){
 
 	$.ajax({
-		url: "http://api.openweathermap.org/data/2.5/weather?q="+ ville +"&units=metric&lang=fr&appid=1ad29eaefcd945e4f49ae28974ac9165",
+		url: "https://api.openweathermap.org/data/2.5/weather?q="+ ville +"&units=metric&lang=fr&appid=1ad29eaefcd945e4f49ae28974ac9165",
 		dataType: "json",
 		success: function(data){
             $("#temp").text(parseInt(data.main.temp) + '°');
