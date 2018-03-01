@@ -2,13 +2,6 @@
  moment.locale("fr");
  $("#date").text(moment().format('LL'));
 
-//J'empêche le rechargement de la page lors de l'appui sur la touche entrée
-$("#ville").keypress(function(event){
-  if ( event.which == 13 ) {
-     event.preventDefault();
-  }
-});
-
 //afficher les données météo et la carte (au chargement ce sont les données de Pamiers qui sont chargées)
 var ville = $("#ville").val();
 
@@ -16,7 +9,7 @@ function meteo(ville){
 
 	$.ajax({
 		url: "http://api.openweathermap.org/data/2.5/weather?q="+ ville +"&units=metric&lang=fr&appid=1ad29eaefcd945e4f49ae28974ac9165",
-		dataType: "jsonp",
+		dataType: "json",
 		success: function(data){
             $("#temp").text(parseInt(data.main.temp) + '°');
 			$("#tempMax").text(data.main.temp_max);
@@ -32,9 +25,18 @@ function meteo(ville){
 }
 
 $(document).ready(function(){
+	//Je charge les données de Pamiers (grâce à la value de l'input) lors du chargement de la page
 	meteo(ville);
+	//Je valide l'envoie du formlaire en appuyant sur le bouton valider
 	$("#bouton").click(function(){
 		ville = $("#ville").val();
 		meteo(ville);
 	})
+	//Je valide l'envoie du formulaire grâce à la pression de la touche entrée
+	$("#ville").keypress(function(e){
+	  	if ( e.keyCode == 13 ) {
+			ville = $("#ville").val();
+			meteo(ville);
+	  	}
+	});
 })
