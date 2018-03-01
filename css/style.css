@@ -9,6 +9,7 @@ body {
 
 /* rentrer le nom de la ville */
 #ville {
+	height: 50pt;
 	width: 40%;
 	margin-top: 2%;
 	margin-right: 30%;
