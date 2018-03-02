@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-body {
+body, html {
     background-color: #00796B;
     color: white;
     font-family: 'Roboto', sans-serif;
