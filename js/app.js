@@ -2,7 +2,7 @@
  moment.locale("fr");
  $("#date").text(moment().format('LL'));
 
-//afficher les données météo et la carte (au chargement ce sont les données de Pamiers qui sont chargées)
+//afficher les données météo et la carte 
 var ville = $("#ville").val();
 
 function meteo(ville){
@@ -27,12 +27,12 @@ function meteo(ville){
 $(document).ready(function(){
 	//Je charge les données de Pamiers (grâce à la value de l'input) lors du chargement de la page
 	meteo(ville);
-	//Je conditione ma fonction à l'appui sur le bouton valider
+	//En cliquant sur le bouton valider on affiche les données relatives au nom renseigné
 	$("#bouton").click(function(){
 		ville = $("#ville").val();
 		meteo(ville);
 	})
-	//Je conditionne ma fonction à la pression de la touche entrée
+	//En appuyant su la touche entrée on peut faire le même affichage
 	$("#ville").keypress(function(e){
 	  	if ( e.keyCode == 13 ) {
 			ville = $("#ville").val();

@@ -116,6 +116,7 @@ body {
 	}
 }
 
+/* Afficher la carte */
 #carte {
 	height: 600px;
 	margin-left: 50px;
